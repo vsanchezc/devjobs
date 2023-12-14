@@ -45,7 +45,7 @@ class HomeVacantes extends Component
                     }
                 });
             })
-            ->orderBy('created_at', 'DESC')->paginate(10);
+            ->orderBy('created_at', 'DESC')->paginate(5);
  
         return view('livewire.home-vacantes', [
             'vacantes' => $vacantes,
